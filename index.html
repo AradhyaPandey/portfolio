@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aradhya Pandey | Computer Science Student & AI/ML Enthusiast</title>
+  <meta name="description" content="Personal portfolio of Aradhya Pandey, a 2nd-year B.Tech Computer Science and Engineering (AI & ML) student at Shri Ramswaroop Memorial University.">
+  <meta name="author" content="Aradhya Pandey">
+  <meta name="keywords" content="Aradhya Pandey, Portfolio, Computer Science, AI, Machine Learning, NLP, SRMU, Developer">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aradhya Pandey | Portfolio">
+  <meta property="og:description" content="Computer Science Engineering Student | AI & ML Enthusiast | Aspiring Developer">
+  <meta property="og:image" content="profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23080F20'/><text x='50' y='65' font-family='sans-serif' font-size='50' font-weight='900' fill='%231769FF' text-anchor='middle'>AP</text><circle cx='80' cy='30' r='8' fill='%2362B5FF'/></svg>">
+
+  <!-- Google Fonts: Space Grotesk (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Subtle Cursor Following Glow (Desktop only) -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Ambient Background Glow Gradients -->
+  <div class="ambient-glow orb-1" aria-hidden="true"></div>
+  <div class="ambient-glow orb-2" aria-hidden="true"></div>
+  <div class="ambient-glow orb-3" aria-hidden="true"></div>
+
+  <!-- Reading Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Aradhya Pandey Homepage">
+        <span class="logo-text">AP</span><span class="logo-dot">.</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#interests" class="nav-link">Interests</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action Button -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline-sm d-none-mobile">Let's Talk</a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section class="hero-section" id="home">
+      <!-- Interactive Particle Canvas -->
+      <canvas id="hero-particles" class="hero-particles-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-container">
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <div class="hero-badge reveal-item">
+            <span class="badge-pulse"></span>
+            <span class="badge-text">2nd Year B.Tech CSE (AI &amp; ML)</span>
+          </div>
+
+          <h1 class="hero-title reveal-item">
+            Hi, I'm <span class="gradient-text">Aradhya Pandey</span>.
+          </h1>
+
+          <!-- Tagline -->
+          <p class="hero-tagline reveal-item">
+            Exploring AI. Building Ideas. Creating Impact.
+          </p>
+
+          <!-- Dynamic Typing Animation Container -->
+          <div class="typewriter-box reveal-item" aria-label="Current roles and passions">
+            <span class="typewriter-prefix">&gt;&nbsp;</span>
+            <span class="typewriter-text" id="typewriter-text"></span>
+            <span class="typewriter-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <!-- Short Professional Introduction -->
+          <p class="hero-description reveal-item">
+            A passionate Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning at Shri Ramswaroop Memorial University. Building a strong foundation in core engineering, software design, and natural language processing.
+          </p>
+
+          <!-- Call To Actions -->
+          <div class="hero-actions reveal-item">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Let's Connect</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials reveal-item">
+            <span class="socials-label">Connect with me:</span>
+            <div class="social-links-row">
+              <a href="https://github.com/Aradhyapandey8910" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile (opens in new tab)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/aradhya-pandey-20450b366" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile (opens in new tab)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0 0-3.06 1.53 1.53 0 0 0 0 3.06m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:aradhyapandey8910@gmail.com" class="social-link" aria-label="Send direct email to Aradhya Pandey">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Portrait Column -->
+        <div class="hero-image-col reveal-item">
+          <div class="portrait-wrapper">
+            <!-- Ambient Behind-Image Glow -->
+            <div class="portrait-glow" aria-hidden="true"></div>
+
+            <!-- Geometric Frame -->
+            <div class="portrait-frame">
+              <div class="portrait-inner">
+                <img 
+                  src="profile.jpg" 
+                  alt="Portrait of Aradhya Pandey, Computer Science student specializing in AI &amp; ML"
+                  class="portrait-img" 
+                  id="profile-img"
+                  loading="eager"
+                  onerror="this.onerror=null; this.parentElement.classList.add('has-fallback');"
+                >
+                <!-- Fallback in case image is missing -->
+                <div class="portrait-fallback" aria-hidden="true">
+                  <div class="fallback-avatar">AP</div>
+                  <span class="fallback-note">Aradhya Pandey</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Floating Tech Badges -->
+            <div class="floating-pill pill-top">
+              <span class="pill-indicator"></span>
+              <span class="pill-text">AI &amp; ML Track</span>
+            </div>
+
+            <div class="floating-pill pill-bottom">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span class="pill-text">SRMU &bull; 2025–2029</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="mouse-icon">
+          <span class="wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- SECTION 2: ABOUT ME -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title">A Little About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative reveal-item">
+            <div class="glass-card about-card">
+              <div class="quote-symbol" aria-hidden="true">&ldquo;</div>
+              <p class="about-lead">
+                I'm Aradhya Pandey, a second-year Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning at Shri Ramswaroop Memorial University.
+              </p>
+              <p class="about-body">
+                I'm passionate about understanding how technology works and exploring how AI can solve real-world problems. Currently, I'm strengthening my programming and development fundamentals while exploring Artificial Intelligence, Natural Language Processing, and Software Development.
+              </p>
+              <p class="about-body">
+                I believe in learning by building, experimenting with ideas, and continuously improving my skills.
+              </p>
+
+              <!-- Highlighted Statement -->
+              <div class="statement-banner">
+                <div class="statement-glow"></div>
+                <div class="statement-content">
+                  <span class="statement-label">My Driving Philosophy</span>
+                  <p class="statement-quote">&ldquo;Curious Mind. Continuous Learner. Future Innovator.&rdquo;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-features reveal-item">
+            <div class="feature-card glass-card">
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </div>
+              <div class="feature-info">
+                <h3 class="feature-title">Academic Specialization</h3>
+                <p class="feature-text">B.Tech in CSE with a concentrated focus on Artificial Intelligence and Machine Learning foundations.</p>
+              </div>
+            </div>
+
+            <div class="feature-card glass-card">
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="feature-info">
+                <h3 class="feature-title">Core Development</h3>
+                <p class="feature-text">Mastering problem-solving paradigms using Python, Java, and standard web technologies.</p>
+              </div>
+            </div>
+
+            <div class="feature-card glass-card">
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="feature-info">
+                <h3 class="feature-title">Honest Growth Path</h3>
+                <p class="feature-text">Dedicated to transparent, stepwise learning through hands-on code experiments and real study.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: EDUCATION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-wrapper reveal-item">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-dot"></div>
+                <div class="marker-line"></div>
+              </div>
+
+              <div class="timeline-content glass-card">
+                <div class="timeline-badge-row">
+                  <span class="edu-status-badge">
+                    <span class="pulse-ring"></span>
+                    Currently Pursuing &bull; 2nd Year
+                  </span>
+                  <span class="edu-duration">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="16" y1="2" x2="16" y2="6"></line>
+                      <line x1="8" y1="2" x2="8" y2="6"></line>
+                      <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    2025 &ndash; 2029 (Expected)
+                  </span>
+                </div>
+
+                <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+                <h4 class="edu-specialization">Computer Science and Engineering &mdash; Artificial Intelligence &amp; Machine Learning</h4>
+                
+                <div class="edu-institution-row">
+                  <div class="institution-name">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <span>Shri Ramswaroop Memorial University (SRMU)</span>
+                  </div>
+                  <div class="institution-loc">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Uttar Pradesh, India</span>
+                  </div>
+                </div>
+
+                <p class="edu-summary">
+                  Enrolled in the specialized AI &amp; ML undergraduate engineering curriculum. Focus areas include computational mathematics, object-oriented software design, data structures, relational database management, and emerging methodologies in cognitive computing and natural language processing.
+                </p>
+
+                <div class="edu-tags">
+                  <span class="edu-tag">Object-Oriented Programming (Java)</span>
+                  <span class="edu-tag">Python for Computing</span>
+                  <span class="edu-tag">Data Structures &amp; Algorithms</span>
+                  <span class="edu-tag">Database Management (SQL)</span>
+                  <span class="edu-tag">AI Fundamentals</span>
+                  <span class="edu-tag">Web Technologies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">Competencies &amp; Learning</span>
+          <h2 class="section-title">My Technical Toolkit</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            An honest representation of the technologies I am currently learning, practicing, and exploring during my undergraduate journey.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming -->
+          <div class="skill-category-card glass-card reveal-item">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="category-title-wrap">
+                <h3 class="category-title">Programming</h3>
+                <span class="category-sub">Core coding fundamentals</span>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <!-- Python -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon-name">
+                    <svg class="tech-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M11.9 1a5.9 5.9 0 0 0-5.9 5.9v2.2h6v.8H3.8A3.8 3.8 0 0 0 0 13.7a3.8 3.8 0 0 0 3.8 3.8h1.4v-1.9a3.8 3.8 0 0 1 3.8-3.8h6a2.2 2.2 0 0 0 2.2-2.2V3.8A2.8 2.8 0 0 0 14.4 1H11.9zm-2.2 1.8a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8zm2.4 20.2a5.9 5.9 0 0 0 5.9-5.9v-2.2h-6v-.8h8.2A3.8 3.8 0 0 0 24 10.3a3.8 3.8 0 0 0-3.8-3.8h-1.4v1.9a3.8 3.8 0 0 1-3.8 3.8h-6a2.2 2.2 0 0 0-2.2 2.2v5.8A2.8 2.8 0 0 0 9.6 23h2.5zm2.2-1.8a.9.9 0 1 1 0-1.8.9.9 0 0 1 0 1.8z"/>
+                    </svg>
+                    <span class="skill-name">Python</span>
+                  </div>
+                  <span class="skill-badge badge-learning">Currently Learning</span>
+                </div>
+                <p class="skill-desc">Practicing core syntax, data structures, algorithms, and exploring scripting libraries for AI/NLP experimentation.</p>
+              </div>
+
+              <!-- Java -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon-name">
+                    <svg class="tech-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M8.8 17.5c-2.3.2-3.8-.5-3.8-.5s1.4-.4 3.4-.6c2.5-.2 5.9.1 7.4.8 0 0-1.9-.3-7-.7zm-.4 2.8c-2 .2-3.2-.4-3.2-.4s1.2-.3 2.9-.5c2.1-.2 5 .1 6.3.7 0 0-1.6-.3-6-.6zm7.8-8.4c.7 1.8-1 3.4-1 3.4s2.4-1.3 1.5-3.6c-.8-2-4.1-3.2-4.1-3.2s4.2 1 3.6 3.4zM10.7 2c.8 1.9-2.1 3.9-2.1 3.9s3.3-1.6 2.3-4.2c-.7-2-3.8-1.7-3.8-1.7s4 .6 3.6 2zm1.6 19.8c-3.1.2-5.7-.6-5.7-.6s2.3-.3 4.9-.5c3.2-.3 8 .1 10 1 0 0-2.8-.5-9.2-.9zM7.5 13.9s-1.8 0-1.8.9c0 .7 1.2.9 2.5 1 2.3.1 5.3 0 7.3-.6 0 0-1 .4-3.5.5-2.7.1-5.7-.2-5.7-1.3 0-1.5 2.5-1.7 2.5-1.7s1.3-.1 2.5 0c-.5-.3-1.8-.4-3.8.3z"/>
+                    </svg>
+                    <span class="skill-name">Java</span>
+                  </div>
+                  <span class="skill-badge badge-learning">Beginner Level</span>
+                </div>
+                <p class="skill-desc">Understanding Object-Oriented Programming (OOP) concepts, classes, inheritance, polymorphism, and basic data structures.</p>
+              </div>
+
+              <!-- SQL -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon-name">
+                    <svg class="tech-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                      <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    </svg>
+                    <span class="skill-name">SQL</span>
+                  </div>
+                  <span class="skill-badge badge-learning">Foundations</span>
+                </div>
+                <p class="skill-desc">Writing relational database queries, SELECT statements, table creation, filtering, and data organization principles.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category-card glass-card reveal-item">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="category-title-wrap">
+                <h3 class="category-title">Web Development</h3>
+                <span class="category-sub">Frontend UI &amp; Styling</span>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon-name">
+                    <svg class="tech-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M1.5 0h21l-1.9 21.3L12 24l-8.6-2.7L1.5 0zm17.5 4.5H5l.4 4.5h12.8l-.4 4.8-5.8 1.6-5.8-1.6-.3-3.2H1.4l.6 6.8 10 2.8 10-2.8 1-12.9z"/>
+                    </svg>
+                    <span class="skill-name">HTML5</span>
+                  </div>
+                  <span class="skill-badge badge-learning">Beginner Level</span>
+                </div>
+                <p class="skill-desc">Structuring semantic, accessible web documents with standard tags, forms, containers, and metadata.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon-name">
+                    <svg class="tech-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M1.5 0h21l-1.9 21.3L12 24l-8.6-2.7L1.5 0zm17.5 4.5H5.4l.2 2.3h13l-.4 4.5H6l.2 2.3h11.9l-.6 6.7-5.5 1.5-5.5-1.5-.4-4.5H2l.6 7.8 9.4 2.6 9.4-2.6 1.4-15.3z"/>
+                    </svg>
+                    <span class="skill-name">CSS3</span>
+                  </div>
+                  <span class="skill-badge badge-learning">Currently Learning</span>
+                </div>
+                <p class="skill-desc">Designing responsive mobile-first layouts, Flexbox, CSS Grid, custom properties, animations, and dark themes.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon-name">
+                    <svg class="tech-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M3 3h18v18H3V3zm14.5 11.2c-.4-.3-1-.5-1.7-.5-.6 0-1 .2-1 .6 0 .4.4.6 1.2.9 1.4.5 2.1 1.2 2.1 2.3 0 1.4-1.1 2.3-2.9 2.3-1.1 0-2-.3-2.6-.7l.6-1.5c.5.4 1.3.7 2 .7.7 0 1.1-.3 1.1-.7 0-.4-.4-.6-1.3-1-1.3-.5-2-1.1-2-2.2 0-1.3 1-2.2 2.7-2.2.9 0 1.7.2 2.2.5l-.7 1.3zm-5.7-4.4v7.7c0 1.1-.5 1.7-1.5 1.7-.5 0-.9-.1-1.2-.2l.2-1.4c.2.1.4.1.7.1.4 0 .6-.2.6-.7V9.8h1.2z"/>
+                    </svg>
+                    <span class="skill-name">JavaScript</span>
+                  </div>
+                  <span class="skill-badge badge-learning">In Progress</span>
+                </div>
+                <p class="skill-desc">Learning DOM manipulation, event listeners, basic functions, and interactive UI component behaviors.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & Technology Interests -->
+          <div class="skill-category-card glass-card reveal-item">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 3.3 2 6.1 5 7.4V20a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.6c3-1.3 5-4.1 5-7.4a8 8 0 0 0-8-8z"></path>
+                  <line x1="9.5" y1="9" x2="9.51" y2="9"></line>
+                  <line x1="14.5" y1="9" x2="14.51" y2="9"></line>
+                </svg>
+              </div>
+              <div class="category-title-wrap">
+                <h3 class="category-title">AI &amp; Tech Interests</h3>
+                <span class="category-sub">Future specialization</span>
+              </div>
+            </div>
+
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon-name">
+                    <svg class="tech-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                      <rect x="9" y="9" width="6" height="6"></rect>
+                      <line x1="9" y1="1" x2="9" y2="4"></line>
+                      <line x1="15" y1="1" x2="15" y2="4"></line>
+                      <line x1="9" y1="20" x2="9" y2="23"></line>
+                      <line x1="15" y1="20" x2="15" y2="23"></line>
+                      <line x1="20" y1="9" x2="23" y2="9"></line>
+                      <line x1="20" y1="14" x2="23" y2="14"></line>
+                      <line x1="1" y1="9" x2="4" y2="9"></line>
+                      <line x1="1" y1="14" x2="4" y2="14"></line>
+                    </svg>
+                    <span class="skill-name">Artificial Intelligence</span>
+                  </div>
+                  <span class="skill-badge badge-exploring">Academic Focus</span>
+                </div>
+                <p class="skill-desc">Studying theoretical foundations of search heuristics, intelligent agents, logic representation, and ethical AI development.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon-name">
+                    <svg class="tech-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <circle cx="18" cy="12" r="3"></circle>
+                      <line x1="8.59" y1="7.41" x2="15.42" y2="10.59"></line>
+                      <line x1="8.59" y1="16.59" x2="15.42" y2="13.41"></line>
+                    </svg>
+                    <span class="skill-name">Machine Learning</span>
+                  </div>
+                  <span class="skill-badge badge-exploring">Exploring</span>
+                </div>
+                <p class="skill-desc">Exploring supervised learning concepts, regression, classification, dataset preprocessing, and model evaluation metrics.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <div class="skill-icon-name">
+                    <svg class="tech-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                      <path d="M8 9h8"></path>
+                      <path d="M8 13h6"></path>
+                    </svg>
+                    <span class="skill-name">Natural Language Processing</span>
+                  </div>
+                  <span class="skill-badge badge-exploring">High Interest</span>
+                </div>
+                <p class="skill-desc">Fascinated by text tokenization, sentiment analysis, language parsing, and automated document summarization models.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">Applied Work &amp; Concepts</span>
+          <h2 class="section-title">Things I've Been Exploring</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            A transparent collection of practical projects and developing prototypes representing my learning milestones.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Personal Portfolio Website -->
+          <article class="project-card glass-card reveal-item">
+            <div class="project-badge-wrap">
+              <span class="project-status-badge status-completed">
+                <span class="status-indicator completed"></span>
+                Personal Project &bull; Active
+              </span>
+              <span class="project-num">01</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-desc">
+                A responsive personal portfolio built using HTML, CSS, and JavaScript to showcase my education, technical skills, interests, and projects.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Custom Electric Blue design system with CSS custom properties</li>
+                <li>Fully responsive grid and flexbox without external heavy frameworks</li>
+                <li>Vanilla JavaScript typing effects, scroll spy, and smooth transitions</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="#home" class="btn btn-outline-sm">
+                <span>View Live Site</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+              <a href="https://github.com/Aradhyapandey8910" target="_blank" rel="noopener noreferrer" class="project-action-link" aria-label="Visit Aradhya's GitHub Profile">
+                <span>GitHub Profile</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Student Data Management System -->
+          <article class="project-card glass-card reveal-item">
+            <div class="project-badge-wrap">
+              <span class="project-status-badge status-progress">
+                <span class="status-indicator progress"></span>
+                Learning Project &bull; In Development
+              </span>
+              <span class="project-num">02</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Student Data Management System</h3>
+              <p class="project-desc">
+                A Java-based project focused on managing student information and understanding basic programming concepts and data organization.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Implementation of object-oriented principles: encapsulation, methods, and classes</li>
+                <li>Console-based records processing for student enrollment, courses, and marks</li>
+                <li>Focus on clean code architecture and structured memory handling in Java</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">OOP</span>
+                <span class="tech-tag">Data Structures</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="coming-soon-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Codebase in Progress</span>
+              </div>
+              <span class="status-note">Repo Coming Soon</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Smart PDF Summarizer -->
+          <article class="project-card glass-card reveal-item">
+            <div class="project-badge-wrap">
+              <span class="project-status-badge status-planned">
+                <span class="status-indicator planned"></span>
+                Planned &bull; Exploring Concept
+              </span>
+              <span class="project-num">03</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Smart PDF Summarizer</h3>
+              <p class="project-desc">
+                An AI/NLP learning project idea focused on extracting text from PDF documents and exploring automated text summarization.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Parsing raw textual content from academic papers and PDF reports</li>
+                <li>Researching frequency-based sentence extraction and transformer abstractions</li>
+                <li>Planned prototype with a lightweight Python backend interface</li>
+              </ul>
+
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Text Extraction</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="coming-soon-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>In Research &amp; Ideation</span>
+              </div>
+              <span class="status-note">Planned / Exploring</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: INTERESTS -->
+    <section class="section interests-section" id="interests">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">Passion &amp; Curiosities</span>
+          <h2 class="section-title">What Excites Me?</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            The domains that motivate me to write code, read technical papers, and build for the future.
+          </p>
+        </div>
+
+        <div class="interests-grid">
+          <!-- Interest 1: AI & ML -->
+          <div class="interest-card glass-card reveal-item">
+            <div class="interest-icon-wrap">
+              <div class="icon-circle">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 3.3 2 6.1 5 7.4V20a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.6c3-1.3 5-4.1 5-7.4a8 8 0 0 0-8-8z"></path>
+                  <line x1="9.5" y1="9" x2="9.51" y2="9"></line>
+                  <line x1="14.5" y1="9" x2="14.51" y2="9"></line>
+                </svg>
+              </div>
+              <span class="interest-index">01</span>
+            </div>
+            <h3 class="interest-title">Artificial Intelligence &amp; Machine Learning</h3>
+            <p class="interest-desc">
+              Discovering how statistical models learn representations from data to make predictions, recognize patterns, and assist human decision-making in meaningful ways.
+            </p>
+            <div class="interest-keyword-row">
+              <span class="interest-pill">Neural Nets</span>
+              <span class="interest-pill">Pattern Recognition</span>
+              <span class="interest-pill">Data Modeling</span>
+            </div>
+          </div>
+
+          <!-- Interest 2: NLP -->
+          <div class="interest-card glass-card reveal-item">
+            <div class="interest-icon-wrap">
+              <div class="icon-circle">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  <circle cx="9" cy="10" r="1"></circle>
+                  <circle cx="12" cy="10" r="1"></circle>
+                  <circle cx="15" cy="10" r="1"></circle>
+                </svg>
+              </div>
+              <span class="interest-index">02</span>
+            </div>
+            <h3 class="interest-title">Natural Language Processing</h3>
+            <p class="interest-desc">
+              Bridging computational logic and human language. Intrigued by how algorithms parse semantics, summarize dense texts, and facilitate intuitive conversational interfaces.
+            </p>
+            <div class="interest-keyword-row">
+              <span class="interest-pill">Text Analytics</span>
+              <span class="interest-pill">Semantic Parsing</span>
+              <span class="interest-pill">Summarization</span>
+            </div>
+          </div>
+
+          <!-- Interest 3: Software Development -->
+          <div class="interest-card glass-card reveal-item">
+            <div class="interest-icon-wrap">
+              <div class="icon-circle">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <span class="interest-index">03</span>
+            </div>
+            <h3 class="interest-title">Software Development</h3>
+            <p class="interest-desc">
+              Engineering reliable, maintainable code architectures. Exploring how robust OOP designs, modular components, and efficient algorithms create reliable applications.
+            </p>
+            <div class="interest-keyword-row">
+              <span class="interest-pill">Clean Architecture</span>
+              <span class="interest-pill">OOP Design</span>
+              <span class="interest-pill">Problem Solving</span>
+            </div>
+          </div>
+
+          <!-- Interest 4: Creative Web Development -->
+          <div class="interest-card glass-card reveal-item">
+            <div class="interest-icon-wrap">
+              <div class="icon-circle">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <span class="interest-index">04</span>
+            </div>
+            <h3 class="interest-title">Creative Web Development</h3>
+            <p class="interest-desc">
+              Crafting immersive, visually rich digital interfaces with modern CSS, glassmorphism, responsive micro-interactions, and accessible web standards.
+            </p>
+            <div class="interest-keyword-row">
+              <span class="interest-pill">Modern UI/UX</span>
+              <span class="interest-pill">Glassmorphism</span>
+              <span class="interest-pill">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            I'm always interested in learning, exploring new ideas, and connecting with people who are passionate about technology.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-col reveal-item">
+            <div class="glass-card contact-card">
+              <h3 class="contact-card-title">Reach Out Directly</h3>
+              <p class="contact-card-text">
+                Whether you'd like to discuss engineering ideas, explore academic collaborations, or share development advice with an eager learner, my inbox is open!
+              </p>
+
+              <!-- Email -->
+              <div class="contact-channel-item">
+                <div class="channel-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-label">Email Address</span>
+                  <a href="mailto:aradhyapandey8910@gmail.com" class="channel-value">aradhyapandey8910@gmail.com</a>
+                </div>
+                <button class="copy-btn" id="copy-email-btn" title="Copy email address to clipboard" aria-label="Copy email address">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-channel-item">
+                <div class="channel-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0 0-3.06 1.53 1.53 0 0 0 0 3.06m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+                  </svg>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-label">LinkedIn Profile</span>
+                  <a href="https://linkedin.com/in/aradhya-pandey-20450b366" target="_blank" rel="noopener noreferrer" class="channel-value">linkedin.com/in/aradhya-pandey-20450b366</a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-channel-item">
+                <div class="channel-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                </div>
+                <div class="channel-content">
+                  <span class="channel-label">GitHub Repository</span>
+                  <a href="https://github.com/Aradhyapandey8910" target="_blank" rel="noopener noreferrer" class="channel-value">github.com/Aradhyapandey8910</a>
+                </div>
+              </div>
+
+              <!-- Action Buttons Row -->
+              <div class="contact-actions-row">
+                <a href="mailto:aradhyapandey8910@gmail.com" class="btn btn-primary btn-full">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Email Me Directly</span>
+                </a>
+                <div class="social-quick-buttons">
+                  <a href="https://linkedin.com/in/aradhya-pandey-20450b366" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="Visit LinkedIn Profile">
+                    LinkedIn
+                  </a>
+                  <a href="https://github.com/Aradhyapandey8910" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="Visit GitHub Profile">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-form-col reveal-item">
+            <div class="glass-card contact-form-card">
+              <h3 class="contact-card-title">Send a Quick Note</h3>
+              <p class="contact-card-text">Leave a message below, and it will automatically prepare an email to send straight to my inbox.</p>
+
+              <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name</label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Sharma" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email</label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject</label>
+                  <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Collaboration / Discussion / Guidance" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Message</label>
+                  <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Hello Aradhya, I saw your portfolio and..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                  <span>Send Message via Email</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" aria-label="Aradhya Pandey Home">
+            <span class="logo-text">AP</span><span class="logo-dot">.</span>
+          </a>
+          <p class="footer-tagline">
+            Computer Science Engineering Student &bull; AI &amp; ML Enthusiast &bull; SRMU (2025–2029)
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="current-year">2026</span> Aradhya Pandey. Designed &amp; built with HTML, CSS, &amp; Vanilla JavaScript.
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/Aradhyapandey8910" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/aradhya-pandey-20450b366" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.53 1.53 0 1 0 0-3.06 1.53 1.53 0 0 0 0 3.06m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+            </svg>
+          </a>
+          <a href="mailto:aradhyapandey8910@gmail.com" aria-label="Email Aradhya Pandey">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
